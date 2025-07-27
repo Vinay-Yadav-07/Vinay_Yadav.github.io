@@ -11,14 +11,16 @@ body {
 /* Header: Hero with Flex Layout */
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;        /* vertical centering */
+  justify-content: center;    /* horizontal centering */
+  flex-wrap: wrap;
   padding: 40px 20px;
   background: linear-gradient(to right, #2c3e50, #34495e);
   color: white;
-  flex-wrap: wrap;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-align: center;  /* ensures text looks centered in small view */
 }
+
 
 .hero-left {
   flex: 0 0 150px;
