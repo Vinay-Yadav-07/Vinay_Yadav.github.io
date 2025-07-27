@@ -41,10 +41,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-
-    <!-- ✅ Profile Image -->
     <img src="vinay.jpg" alt="Vinay Yadav" style="width: 150px; height: 150px; border-radius: 50%; display: block; margin: 0 auto 20px;" />
-
     <p>I am a motivated 2nd-year student with basic knowledge of C and Java, experienced in frontend development using HTML, CSS, and JavaScript. Currently expanding my skills to backend technologies, aiming to become a full-stack developer. I have completed several frontend projects with a strong focus on design and functionality.</p>
   </section>
 
@@ -87,8 +84,19 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:vinay.yadav@vit.edu.in">vinay.yadav@vit.edu.in</a></p>
-    <p>Phone: <a href="tel:+919322611075">+91 93226 11075</a></p>
+    <form action="https://formspree.io/f/mwpqojzn" method="POST">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="font-size: 0.9em; color: gray;">* Contact form is secure and avoids spam. Your details are safe.</p>
   </section>
 
   <footer>
